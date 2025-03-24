@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controle\AlunoClasse.cs" />
     <Compile Include="Model\AlunoModel.cs" />
     <Compile Include="Util\AlunoUtil.cs" />
     <Compile Include="Viem\Form1.cs">
@@ -81,9 +82,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controle\" />
-    <Folder Include="NewFolder1\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
