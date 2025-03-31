@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AlunoText.Controle;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,6 +20,9 @@ namespace AlunoText
 
         private void btnCalc_Click(object sender, EventArgs e)
         {
+            AlunoClasse.VerificarMedia(txtMatricula.Text,txtNome.Text,txtProva01.Text,txtProva02.Text);
+
+            vi  
 
         }
     }

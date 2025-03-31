@@ -33,11 +33,11 @@ namespace AlunoText.Model
         {
             if (media >= 7)
             {
-                MessageBox.Show($"ALUNO {Nome} ESTA APROVADO", "MEDIA");
+               return $"ALUNO {Nome} ESTA APROVADO";
             }
             else
             {
-                MessageBox.Show($"ALUNO {Nome} ESTA REPROVADO", "MEDIA");
+               return $"ALUNO {Nome} ESTA REPROVADO";
             }
         }
 
