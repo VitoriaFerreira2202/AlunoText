@@ -90,6 +90,7 @@
             this.btnCalc.TabIndex = 4;
             this.btnCalc.Text = "CALCULAR";
             this.btnCalc.UseVisualStyleBackColor = true;
+            this.btnCalc.Click += new System.EventHandler(this.btnCalc_Click);
             // 
             // txtNome
             // 

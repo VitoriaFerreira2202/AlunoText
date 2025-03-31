@@ -16,5 +16,10 @@ namespace AlunoText
         {
             InitializeComponent();
         }
+
+        private void btnCalc_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
