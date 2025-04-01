@@ -11,9 +11,11 @@ namespace AlunoText.Controle
     {
         public static string VerificarMedia(string nome, string matricula, string prova1, string prova2) 
         {
-            AlunoModel VerificarMedia = new AlunoModel(nome,matricula,prova1,prova2);
+            AlunoModel aluno = new AlunoModel(nome,matricula,prova1,prova2);
 
-           return VerificarMedia.CalcFinal();
+            string media = aluno.CalcFinal().ToString();
+            aluno.VerificarMedia();
+           return media;
         }
 
 

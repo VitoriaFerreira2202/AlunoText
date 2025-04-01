@@ -1,4 +1,5 @@
 ﻿using AlunoText.Controle;
+using AlunoText.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,9 +21,24 @@ namespace AlunoText
 
         private void btnCalc_Click(object sender, EventArgs e)
         {
-            AlunoClasse.VerificarMedia(txtMatricula.Text,txtNome.Text,txtProva01.Text,txtProva02.Text);
+            try 
+            { 
+                string nome =txtNome.Text;
+                string matricula =txtMatricula.Text;
+                string prova1 =txtProva01.Text;
+                string prova2 = txtProva02.Text;
+                string media= AlunoClasse.VerificarMedia(nome,matricula,prova1,prova2);
 
-            vi  
+                lblResultado.Text = $"MÉDIA:{media}";
+
+                AlunoModel aluno = new AlunoModel(nome, matricula, prova1, prova2);
+                aluno.VerificarMedia();
+            }
+
+            catch(ArgumentException ex) 
+            { 
+                MessageBox.Show(ex.Message, "erro",MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
         }
     }
